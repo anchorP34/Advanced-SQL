@@ -39,7 +39,7 @@ DECLARE @i int = 1
 DECLARE @FactTableSchema nvarchar(255) = 'dbo'
 declare @FactTableName nvarchar(255) = 'FactPlayByPlay'
 
--- Declare the cursor and put in the values of the dimentional columns of the fact table
+-- Declare the cursor and put in the values of the dimensional columns of the fact table
 DECLARE db_cursor CURSOR FOR
 SELECT COLUMN_NAME
 from INFORMATION_SCHEMA.COLUMNS
